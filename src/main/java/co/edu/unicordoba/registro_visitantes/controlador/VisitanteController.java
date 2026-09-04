@@ -6,6 +6,7 @@ import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,8 +26,9 @@ public class VisitanteController {
     }
 
     @PostMapping
-    public Visitante registrar(@RequestParam String nombre,
-            @RequestParam int edad) {
+    public Visitante registrar(@RequestBody Map<String, Object> body) {
+        String nombre = (String) body.get("nombre");
+        int edad = Integer.parseInt(body.get("edad").toString());
         return servicio.registrar(nombre, edad);
     }
 
