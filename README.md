@@ -11,7 +11,7 @@ API REST desarrollada con Spring Boot para demostrar el uso de atributos y méto
 
 ## Requisitos
 
-- Java 21 o superior
+- Java 26
 - Proyecto descargado o clonado localmente
 
 ## Ejecutar la aplicación
