@@ -1,3 +1,8 @@
+# Integrantes
+- Samuel David Hernández Narváes
+- Jorge Samuel Morelo Martínez 
+- Ronald Steven Rondon Zuñiga
+
 # Registro de Visitantes
 
 API REST desarrollada con Spring Boot para demostrar el uso de atributos y métodos de instancia, miembros `static`, beans singleton y pruebas unitarias.
